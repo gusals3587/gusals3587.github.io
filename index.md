@@ -6,3 +6,5 @@ layout: default
 [week 0](./week0)
 
 [week 1](./week1)
+
+[week 2](./week2)
