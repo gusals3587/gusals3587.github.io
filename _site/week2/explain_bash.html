@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+	<head>
+		<meta charset='utf-8'>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,maximum-scale=2">
+		<link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css?v=656f8e4cb7d190dfc5cc7a9697e64e3b9860e64a">
+		<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3/build/web/hack.css">
+
+		<!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>bash shell (터미널/terminal) | 0과 1 임시 사이트</title>
+<meta name="generator" content="Jekyll v3.7.4" />
+<meta property="og:title" content="bash shell (터미널/terminal)" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/week2/explain_bash" />
+<meta property="og:url" content="http://localhost:4000/week2/explain_bash" />
+<meta property="og:site_name" content="0과 1 임시 사이트" />
+<script type="application/ld+json">
+{"@type":"WebPage","url":"http://localhost:4000/week2/explain_bash","headline":"bash shell (터미널/terminal)","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+	</head>
+
+<body>
+
+	<!-- HEADER -->
+	<div id="header_wrap" class="outer">
+		<header class="inner">
+			
+			<a id="forkme_banner" href="https://github.com/gusals3587/gusals3587.github.io">View on GitHub</a>
+			
+
+			<h1 id="project_title">0과 1 임시 사이트</h1>
+			<h2 id="project_tagline"></h2>
+
+			
+			<ul>
+				<li><a href="/">Club</a></li>
+				<li><a href="/blog">Blog</a></li>
+			</ul>
+		</header>
+	</div>
+
+	<!-- MAIN CONTENT -->
+	<div id="main_content_wrap" class="outer">
+		<section id="main_content" class="inner">
+			<h1 id="bash-shell-터미널terminal">bash shell (터미널/terminal)</h1>
+<p>처음 ide.cs50.io를 실행할 때, 대부분 다음 처럼 위에 파일 창이 뜨고, 아래에 하늘 색의 창이 뜰 것이다. 이 하늘 색의 창을 terminal 혹은 bash shell이라고 한다.
+<img src="/assets/week2 explanation cs50 ide.png" alt="cs50 ide" /></p>
+
+<p>terminal이란, 간단하게 생각하면 윈도우의 파일 탐색기, 아니면 맥의 Finder라고 생각해도 무방하다. 하지만 마우스의 클릭으로 파일 (or 폴더)를 수정하고, 삭제하고, 생성하는 대신에, 오르지 키보드만을 이용해서 파일 (or 폴더)를 수정하고, 삭제하고, 생성하는 것이다. 이미 윈도우의 파일 탐색기 같은 편리한 어플이 있는데, 굳이 왜 불편하게 키보드 만을 이용하나요?라는 질문을 물어본다면, 두 가지 답이 있다. 유연성과 필요성이다.</p>
+
+<h4 id="1-유연성">1. 유연성</h4>
+<p>물론 배우기 전이기 때문에 알지 못하지만, 터미널은 매우 강력한 힘을 가지고 있고, 어떨 때는 그 파일 탐색기 보다는 비교할 수 없는 정확도와 속도를 가져올 수 있다. 대부분 터미널의 프로그램들은 단독으로 실행될 뿐만 아니라, 다른 프로그램들과 연결되고 확장되면서, 사용자가 새로운 기능을 추가할 수 있고, 프로그램 자체를 변형할 수도 있다.</p>
+
+<p>물론 터미널을 계속 사용하다 보면, 그냥 터미널이 더 편할 때가 있다.</p>
+
+<h4 id="2-필요성">2. 필요성</h4>
+<p>터미널은 파일 탐색기보다 이용하기 어렵지만, 상당히 더 ‘가볍다’는 장점이 있다(차지하는 용량이 적고, 수행 속도가 더 빠르다는 뜻이다). 이러한 특징들은 컴퓨터의 마지막 성능까지 쥐어쨔야 하는 서버에서는 적합하게 드러난다. 그러하여 아마존, 네이버, 카카오 등등 많은 양의 일을 처리하는 서버에서는 터미널을 이용하게 되고, 필연적으로 그 서버를 관리하는 관리자부터 개발자까지 터미널에 대한 지식이 있어야한다. 물론 단순히 성능 뿐만을 아니라 1에서 말했던 유연성 때문에 파일 관리자 같은 <a href="https://namu.wiki/w/GUI">GUI 프로그램</a> 대신 이용 될 때가 많다.</p>
+
+<p>이렇게 터미널에 대한 질문이 끝났다면, 실제 터미널의 명령어 몇 개를 배워보자, 명령어를 넣는 방법은 단순히 명령어를 입력하고, 엔터 키를 누르면 된다.</p>
+
+<h5 id="man">man</h5>
+<p>manual의 줄임말(*)로, man 다음으로 명령어를 치면, 명령어에 대한 설명이 나온다.<br />
+<del>물론 영어</del><br />
+예) man ls</p>
+
+<h5 id="ls">ls</h5>
+<p>list의 줄임말(*)로, 현재 컴퓨터가 보이는 파일을 말해준다. 여기서 폴더 명을 넣으면 그 폴더에 들어있는 파일을 알려준다.</p>
+
+<h5 id="cd">cd</h5>
+<p>change directory의 줄임말(*)로, cd 옆에 들어가고 싶은 폴더 명을 치고 실행하면, 마치 파일 탐색기에서 그 폴더를 더블-클릭한 것 처럼, 그 폴더 속으로 들어간다. 
+폴더 하나 만들고, 그 안에 파일 하나 만들고, 터미널에서 만든 폴더를 cd로 들어간 후 ls를 실행하면 그 폴더 안의 파일이 나올 것이다.</p>
+
+<p>cd ..: cd 옆에 .(마침표) 두 개를 치고 실행하면, 그 바깥 폴더로 들어가게 된다. 한 번 폴더 안으올 들어가고, cd .. 을 싱행하면, 다시 시작했던 곳으로 돌아온다.</p>
+
+<p><em>(*): 뇌피셜</em></p>
+
+<h5 id="make">make</h5>
+<p>따지고 보면 터미널에 원래 있던 명령어는 아니지만, cs50 ide가 만들어 준 명령어이다. C 프로그램을 컴파일 하고 싶을 때, 그 컴파일 하고 싶은 프로그램 파일명에서 .c를 때고 넣어서 실행하면 make가 컴파일 다 해준다. 예를 들어 hello.c라는 프로그램을 컴파일하고 싶을 때, make hello라고 치고 엔터를 누르면 hello라는 파일에 hello.c가 완전히 컴파일 된 machine-code, 그 이진법 숫자들이 들어있다(컴파일 에러가 없다고 가정 하에). 이 후 ./hello라고 터미널에 넣으면 hello가 실행된다.</p>
+
+<hr />
+
+<blockquote>
+  <p>지금 부터는 단순히 프로그래밍을 하기 위해서 필표하지는 않지만 알아두면 유용한 여러 명령어를 간단히 몇 개 설명할 것이다</p>
+</blockquote>
+
+<h6 id="touch">touch</h6>
+<p>빈 파일을 생성하고 싶을 때 이용한다 예) touch hello.c</p>
+
+<h6 id="rm">rm</h6>
+<p>파일을 삭제한다 예) rm hello.c</p>
+
+<p>rm -r: 폴더 전체를 삭제하고 싶을 때 이용한다. 하지만 폴더 속에 있는 파일을 지우기 싶은지 일일이 물어본다.</p>
+
+<p>rm -rf: 폴더 전체를 묻지도 따지지도 않고 삭제한다.</p>
+
+<blockquote>
+  <p><strong>터미널에서는 ‘휴지통’같은 건 없다, 즉 rm을 이용하면 그 파일을 그냥 날라간다는 것이다. 그러므로 rm을 이용할 때, 특히 rm -rf를 이용할 때는 조심해야 한다</strong></p>
+</blockquote>
+
+<h6 id="mkdir">mkdir</h6>
+<p>touch는 빈 파일을 만들면, mkdir는 빈 폴더를 만든다. 예) touch pset2</p>
+
+<h6 id="cat">cat</h6>
+<p>파일의 내용물을 보고 싶을 때 이용된다, 여기서 알아야 하는 것은 이 프로그램은 한글이나 워드와 달리 파일의 <em>모든</em> 내용을 보여준다. 그러하여 .txt 파일이나 소스 코드를 편집은 안 해도 되는데 읽어야 하는 상황이 올 때는 유용하지만, 사진이나, 워드 파일 등에는 적합하지 않다</p>
+
+<h6 id="특수-파일">특수 파일</h6>
+<p>명령어가 아니라, 터미널에서 존재하는 특수한 파일이 몇 개 있기 때문에, 짚고 넘어간다. . (마침표 한 개)와 ..(마침표 두 개)이다. .은 단순히 현재 컴퓨터가 들어가 있는 폴더를 가르킨다. 그래서 cd . 을 실행하면 놀~~랍게도 아무 것도 안 일어난다. 왜냐하면 cd에게 지금 들어가 있는 폴더로 다시 들어가라고 했기 때문이다. 하지만 ..은 상위에 존재하는 폴더를 가르킨다.<br />
+예)  ($모양이 있는 줄을 터미널 명령어고, 나머지는 터미널의 출력 값 or 추가 설명이다)
+$ mkdir pset2<br />
+$ cd pset2<br />
+$ mkdir problem1<br />
+$ cd problem1<br />
+$ cd ..</p>
+
+<p>이런 명령어를 순서대로 실행하면 컴퓨터는 현재 pset2에 있고, pset2라는 폴더 안에 problem1이라는 폴더가 있을 것이다.</p>
+
+<h6 id="echo">echo</h6>
+<p>넣은 걸 다시 말해준다. 그래서 echo(메아리)이다.<br />
+$ echo hello world<br />
+hello world</p>
+
+<h6 id="cp">cp</h6>
+<p>파일을 복사 한다. 첫 번째 입력 값으로 복사하고 <em>싶은</em> 파일의 이름을 넣고, 두 번째 입력 값으로 복사를 <em>한</em> 파일의 이름을 쓴 다. 만약 이름은 같고 폴더만 다르게 복사하고 싶으면 두 번째 입력 값으로 폴더 이름을 넣으면 된다
+예) (여기서 example1.txt는 텍스트 파일이고, example2는 폴더이다)
+$ ls<br />
+example1.txt example2<br />
+$ cp example1.txt example2  =&gt; example1.txt를 example2라는 폴더(directory)로 복사 된다.</p>
+
+<h5 id="추가-링크"><a href="https://cailisin.tistory.com/127">추가 링크</a></h5>
+
+<h5 id="질문">질문</h5>
+<p>$ cat hello.txt<br />
+hello world<br />
+$ mkdir problem1<br />
+$ cp hello.txt another_hello.txt
+$ cp hello.txt problem1
+$ ls
+이 때 ls의 출력 값은?</p>
+
+
+		</section>
+	</div>
+
+	<!-- FOOTER  -->
+	<div id="footer_wrap" class="outer">
+		<footer class="inner">
+			
+			<p class="copyright">0과 1 임시 사이트 maintained by <a href="https://github.com/gusals3587">gusals3587</a></p>
+			
+			<p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+		</footer>
+	</div>
+
+	
+</body>
+
+</html>
