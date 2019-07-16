@@ -77,3 +77,5 @@ rofl</code></pre>
 unix의 time 프로그램을 이용하면 됩니다.
 
       time ./crack 50JGnXUgaafgc
+	  
+[back](../)
