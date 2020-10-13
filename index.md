@@ -1,12 +1,5 @@
 ---
 layout: default
 ---
-[소개 동영상](./hello_world)
 
-[week 0](./week0)
-
-[week 1](./week1)
-
-[week 2](./week2)
-
-[week 3](./week3)
+I like computers, math, and physics. For now, the aim of this blog is to be my diary or review of things that have caught my interest
