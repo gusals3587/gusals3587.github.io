@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,maximum-scale=2">
+	<link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css?v=90e0cfd10c57e3fc679519c19c0f7cf2dffa89b7">
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3/build/web/hack.css">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+
+	<!-- The loading of KaTeX is deferred to speed up page rendering -->
+	<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+
+	<!-- To automatically render math in text elements, include the auto-render extension: -->
+	<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"></script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			renderMathInElement(
+				document.body, {
+					delimiters: [{
+							left: "$$",
+							right: "$$",
+							display: true
+						},
+						{
+							left: "\\[",
+							right: "\\]",
+							display: true
+						},
+						{
+							left: "$",
+							right: "$",
+							display: false
+						},
+						{
+							left: "\\(",
+							right: "\\)",
+							display: false
+						}
+					]
+				}
+			);
+		});
+
+	</script>
+
+	<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Pulleys with weight of the rope accounted | Henry’s blog</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Pulleys with weight of the rope accounted" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/blogs/blog/2020/12/10/pulley_exposition.html" />
+<meta property="og:url" content="http://localhost:4000/blogs/blog/2020/12/10/pulley_exposition.html" />
+<meta property="og:site_name" content="Henry’s blog" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-12-10T23:43:59+09:00" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/blogs/blog/2020/12/10/pulley_exposition.html","headline":"Pulleys with weight of the rope accounted","dateModified":"2020-12-10T23:43:59+09:00","datePublished":"2020-12-10T23:43:59+09:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blogs/blog/2020/12/10/pulley_exposition.html"},"@type":"BlogPosting","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+
+	<!-- HEADER -->
+	<div id="header_wrap" class="outer">
+		<header class="inner">
+			
+			<a id="forkme_banner" href="https://github.com/gusals3587/gusals3587.github.io">View on GitHub</a>
+			
+
+			<h1 id="project_title">Henry's blog</h1>
+			<h2 id="project_tagline"></h2>
+
+			
+			<ul class="menubar">
+				<li><a href="/">Home</a></li>
+				<li><a href="/books">Books</a></li>
+				<li><a href="/blogs">Blogs</a></li>
+				<li style="float: right"><a href="/archive">Archive</a></li>
+			</ul>
+		</header>
+	</div>
+
+	<!-- MAIN CONTENT -->
+	<div id="main_content_wrap" class="outer">
+		<section id="main_content" class="inner">
+			<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Pulleys with weight of the rope accounted</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2020-12-10T23:43:59+09:00" itemprop="datePublished">Dec 10, 2020
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <style>
+	img
+	{
+		float: left;
+		/* I don't like this !important hack, but whatever */
+		margin: 20px !important;
+	}
+	li
+	{
+		list-style-position: inside;
+	}
+</style>
+
+<p><img src="/assets/pulley-thought1.png" alt="Pulley with weight 2m on the left and weight m on the right" />
+In a typical highschool situation, when solving a diagram like this, we would be neglecting the friction and the weight of the rope. Now, accounting for friction is a story for another time. But let’s look at the rope more closely, what does it mean to “neglect the weight of the rope”?</p>
+
+<p>Well, it means we pretend the rope has zero mass, and even though it’s accelerating just like the weight on the pulley, it will take 0 Newton to keep up with the weight $ 2m $ and $ m $.</p>
+
+<p>Don’t believe me? Well, let’s calculate the force on the rope.<br />
+Because the magnitude of acceleration is the same all throughout the system. The net force on the whole system is $ 2mg - mg = mg = 3ma $ which leads to $ a = \frac{1}{3}g$.</p>
+
+<p><img src="/assets/pulley-net-force.png" alt="Diagram showing the net force on the pulley" />
+<img src="/assets/force-2m.png" alt="force diagram on the weight 2m" />
+<img src="/assets/force-m.png" alt="force diagram on the weight m" />
+<img src="/assets/pulley-string.png" alt="Force diagram on the pulley's string" />
+Zooming in on the two weights, we notice the rope has to provide force with magnitude $\frac{3}{4}mg$ in order for the two weights to have the same acceleration. Now, using Newton’s third law, we can also infer that the weights pull on the string with magnitude $\frac{3}{4}mg$
+<br /><br />
+Therefore, since the string is pulled in opposite direction with the same magnitude, the string receives zero force. QED.</p>
+
+<p>So the string receives zero force, precisely because we pretended that the string’s mass is zero. So no matter how big the acceleration of the string is. $F = ma = 0 \cdot a = 0$</p>
+
+<h3 id="but-what-if-we-dont-pretend">But what if we don’t pretend?</h3>
+
+<p>What if we don’t pretend the string’s weight is zero? Now, we don’t want to just say “ let the string on the left have weight $\alpha$ and the string on the right $\beta$ “ and start our analysis, because that’s almost<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote">1</a></sup> the same thing as having two mass $2m + \alpha$ and $m + \beta$</p>
+
+<p><img src="/assets/pulley-trivial.png" alt="Picture showing the trivial equality between the two situation" /></p>
+
+<p>No, in order to make our situation more interesting, let’s say we’re in a situation where the string’s gravity is ignored, but the string’s inertia is accounted for.<br />
+A hypothetical situation where this could happen is when the string’s inertial mass is not small enough to ignore, but it’s</p>
+<ol>
+  <li>orders of magnitude smaller than the weight and</li>
+  <li>gravitational acceleration is so small that the gravity doesn’t act that hard on the string compared to the weight.
+<br /><br />
+Now, is this a hypothetical situation just for funsies? Probably, but I’m more of math major than a physics major, so what can I say?</li>
+</ol>
+
+<p>To make the analysis easier, let’s hold the pulley in place, and analyze <em>the moment</em> we let go, so all the parts of the system have initial velocity 0.<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote">2</a></sup></p>
+
+<p>Furthermore, let’s say the left part of the rope has mass $ 2\beta $ and the right part of the rope $ \beta $. Hopefully the reader will be able to see the way to generalize this to arbitrary proportion.</p>
+
+<p>One final thing before the analysis begins, I want you to think intuitively about what will happen. Will the rope receive any force? If so, how much? Will the weights go slower? faster? just the same?</p>
+
+<p><img src="/assets/pulley-setup.png" alt="Final pulley setup with the accounting for the weight of the rope" />
+Now, since the acceleration is still the same throughout the system</p>
+
+\[mg = (3m+3\beta)a\]
+
+<p>in order keep the algebra clean, let’s try to keep the $a$ for as long as we can.<br />
+Now, zooming in on the weight, we would see that the string on the left would pull with magnitude $2mg - 2ma$ (net force on $2m$ would be $2mg - (2mg - 2ma) = 2ma$), and the string on the right would pull with $mg + ma$. Now, again, using Newton’s third law, we can zoom in on the string and figure out it’s net force.
+<br /><br /><br /><br />
+<img src="/assets/pulley-accounted-rope.png" alt="Pulley string with string inertia accounted" />
+Finding the net force</p>
+
+\[2mg-2ma-mg-ma=mg-3ma\]
+
+<p>Substitute $mg$</p>
+
+\[(3m+3\beta)a - 3ma = 3\beta a\]
+
+<p>So the rope, now accounted for it’s inertia, does receive force, in exactly the same magnitude that would make it have the same acceleration of the weights.</p>
+
+<h3 id="thoughts">Thoughts</h3>
+<p>I think it’s always a healthy exercise to go outside the textbook for a second and put some messy, real world complication back in. Although some problem, when generalized, makes that problem from “solvable” to “impossible” (e.g. 2-body to 3-body problem), some problems pushes your analytical skill to the test, and it’s always a good habit to try to generalize once you have some foothold with the special case of the problem.</p>
+
+<p>You could also think about when the pulley is in motion (the initial velocity is not zero), air friction, etc etc. But I think this is enough exposition for a high school textbook example, I’ll think about more complicated stuff for better, more interesting examples.</p>
+
+<hr />
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>almost, since the string’s mass will change with time (left side becoming heavier, right side becoming lighter) <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:2" role="doc-endnote">
+      <p>if there is velocity, the mass of the rope would be a <a href="https://en.wikipedia.org/wiki/Newton%27s_laws_of_motion#Variable-mass_systems">variable mass system</a>, a complication for another time. <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+  </div><a class="u-url" href="/blogs/blog/2020/12/10/pulley_exposition.html" hidden></a>
+</article>
+
+		</section>
+	</div>
+
+	<!-- FOOTER  -->
+	<div id="footer_wrap" class="outer">
+		<footer class="inner">
+			
+			<p class="copyright">Henry's blog maintained by <a href="https://github.com/gusals3587">gusals3587</a></p>
+			
+			<p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+		</footer>
+	</div>
+
+	
+</body>
+
+</html>
