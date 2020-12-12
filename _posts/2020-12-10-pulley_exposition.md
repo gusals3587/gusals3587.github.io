@@ -4,20 +4,27 @@ title: "Pulleys with weight of the rope accounted"
 category: blog
 ---
 
-<style>
+<style media="screen and (min-width: 800px)">
 	img
 	{
 		float: left;
-		/* I don't like this !important hack, but whatever */
-		margin: 20px !important;
+		height: 200px
 	}
 	li
 	{
 		list-style-position: inside;
 	}
 </style>
+<style>
+	img
+	{
+		/* I don't like this !important hack, but whatever */
+		margin: 20px !important;
+	}
+</style>
 
 ![Pulley with weight 2m on the left and weight m on the right](/assets/pulley-thought1.png)
+
 In a typical highschool situation, when solving a diagram like this, we would be neglecting the friction and the weight of the rope. Now, accounting for friction is a story for another time. But let's look at the rope more closely, what does it mean to "neglect the weight of the rope"?
 
 Well, it means we pretend the rope has zero mass, and even though it's accelerating just like the weight on the pulley, it will take 0 Newton to keep up with the weight $ 2m $ and $ m $.
@@ -29,6 +36,7 @@ Because the magnitude of acceleration is the same all throughout the system. The
 ![force diagram on the weight 2m](/assets/force-2m.png)
 ![force diagram on the weight m](/assets/force-m.png)
 ![Force diagram on the pulley's string](/assets/pulley-string.png)
+
 Zooming in on the two weights, we notice the rope has to provide force with magnitude $\frac{3}{4}mg$ in order for the two weights to have the same acceleration. Now, using Newton's third law, we can also infer that the weights pull on the string with magnitude $\frac{3}{4}mg$
 <br/><br/>
 Therefore, since the string is pulled in opposite direction with the same magnitude, the string receives zero force. QED.
@@ -55,14 +63,15 @@ Furthermore, let's say the left part of the rope has mass $ 2\beta $ and the rig
 One final thing before the analysis begins, I want you to think intuitively about what will happen. Will the rope receive any force? If so, how much? Will the weights go slower? faster? just the same?
 
 ![Final pulley setup with the accounting for the weight of the rope](/assets/pulley-setup.png)
+![Pulley string with string inertia accounted](/assets/pulley-accounted-rope.png)
+
 Now, since the acceleration is still the same throughout the system
 
 $$mg = (3m+3\beta)a$$
 
-in order keep the algebra clean, let's try to keep the $a$ for as long as we can.<br/>
+in order keep the algebra clean, let's try to keep the $a$ for as long as we can.
 Now, zooming in on the weight, we would see that the string on the left would pull with magnitude $2mg - 2ma$ (net force on $2m$ would be $2mg - (2mg - 2ma) = 2ma$), and the string on the right would pull with $mg + ma$. Now, again, using Newton's third law, we can zoom in on the string and figure out it's net force.
-<br/><br/><br/><br/>
-![Pulley string with string inertia accounted](/assets/pulley-accounted-rope.png)
+
 Finding the net force
 
 $$2mg-2ma-mg-ma=mg-3ma$$

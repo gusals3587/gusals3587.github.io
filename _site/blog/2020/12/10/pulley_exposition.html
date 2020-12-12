@@ -5,7 +5,7 @@
 	<meta charset='utf-8'>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width,maximum-scale=2">
-	<link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css?v=93024b7a80bc64559469eb1fa81a7bb053999d34">
+	<link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css?v=6597421ad407a6c330c08d2b1f86002334bdbe91">
 	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3/build/web/hack.css">
 
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
@@ -51,13 +51,13 @@
 <meta name="generator" content="Jekyll v3.9.0" />
 <meta property="og:title" content="Pulleys with weight of the rope accounted" />
 <meta property="og:locale" content="en_US" />
-<link rel="canonical" href="http://localhost:4000/blogs/blog/2020/12/10/pulley_exposition.html" />
-<meta property="og:url" content="http://localhost:4000/blogs/blog/2020/12/10/pulley_exposition.html" />
+<link rel="canonical" href="http://localhost:4000/blog/2020/12/10/pulley_exposition.html" />
+<meta property="og:url" content="http://localhost:4000/blog/2020/12/10/pulley_exposition.html" />
 <meta property="og:site_name" content="Henry’s blog" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-12-10T00:00:00+09:00" />
 <script type="application/ld+json">
-{"url":"http://localhost:4000/blogs/blog/2020/12/10/pulley_exposition.html","headline":"Pulleys with weight of the rope accounted","dateModified":"2020-12-10T00:00:00+09:00","datePublished":"2020-12-10T00:00:00+09:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blogs/blog/2020/12/10/pulley_exposition.html"},"@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"url":"http://localhost:4000/blog/2020/12/10/pulley_exposition.html","headline":"Pulleys with weight of the rope accounted","dateModified":"2020-12-10T00:00:00+09:00","datePublished":"2020-12-10T00:00:00+09:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/2020/12/10/pulley_exposition.html"},"@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -78,7 +78,7 @@
 			<ul class="menubar">
 				<li><a href="/">Home</a></li>
 				<li><a href="/books">Books</a></li>
-				<li><a href="/blogs">Blogs</a></li>
+				<li><a href="/blog">Blog</a></li>
 				<li style="float: right"><a href="/archive">Archive</a></li>
 			</ul>
 		</header>
@@ -97,12 +97,11 @@
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <style>
+    <style media="screen and (min-width: 800px)">
 	img
 	{
 		float: left;
-		/* I don't like this !important hack, but whatever */
-		margin: 20px !important;
+		height: 200px
 	}
 	li
 	{
@@ -110,8 +109,17 @@
 	}
 </style>
 
-<p><img src="/assets/pulley-thought1.png" alt="Pulley with weight 2m on the left and weight m on the right" />
-In a typical highschool situation, when solving a diagram like this, we would be neglecting the friction and the weight of the rope. Now, accounting for friction is a story for another time. But let’s look at the rope more closely, what does it mean to “neglect the weight of the rope”?</p>
+<style>
+	img
+	{
+		/* I don't like this !important hack, but whatever */
+		margin: 20px !important;
+	}
+</style>
+
+<p><img src="/assets/pulley-thought1.png" alt="Pulley with weight 2m on the left and weight m on the right" /></p>
+
+<p>In a typical highschool situation, when solving a diagram like this, we would be neglecting the friction and the weight of the rope. Now, accounting for friction is a story for another time. But let’s look at the rope more closely, what does it mean to “neglect the weight of the rope”?</p>
 
 <p>Well, it means we pretend the rope has zero mass, and even though it’s accelerating just like the weight on the pulley, it will take 0 Newton to keep up with the weight $ 2m $ and $ m $.</p>
 
@@ -121,8 +129,9 @@ Because the magnitude of acceleration is the same all throughout the system. The
 <p><img src="/assets/pulley-net-force.png" alt="Diagram showing the net force on the pulley" />
 <img src="/assets/force-2m.png" alt="force diagram on the weight 2m" />
 <img src="/assets/force-m.png" alt="force diagram on the weight m" />
-<img src="/assets/pulley-string.png" alt="Force diagram on the pulley's string" />
-Zooming in on the two weights, we notice the rope has to provide force with magnitude $\frac{3}{4}mg$ in order for the two weights to have the same acceleration. Now, using Newton’s third law, we can also infer that the weights pull on the string with magnitude $\frac{3}{4}mg$
+<img src="/assets/pulley-string.png" alt="Force diagram on the pulley's string" /></p>
+
+<p>Zooming in on the two weights, we notice the rope has to provide force with magnitude $\frac{3}{4}mg$ in order for the two weights to have the same acceleration. Now, using Newton’s third law, we can also infer that the weights pull on the string with magnitude $\frac{3}{4}mg$
 <br /><br />
 Therefore, since the string is pulled in opposite direction with the same magnitude, the string receives zero force. QED.</p>
 
@@ -150,15 +159,16 @@ Now, is this a hypothetical situation just for funsies? Probably, but I’m more
 <p>One final thing before the analysis begins, I want you to think intuitively about what will happen. Will the rope receive any force? If so, how much? Will the weights go slower? faster? just the same?</p>
 
 <p><img src="/assets/pulley-setup.png" alt="Final pulley setup with the accounting for the weight of the rope" />
-Now, since the acceleration is still the same throughout the system</p>
+<img src="/assets/pulley-accounted-rope.png" alt="Pulley string with string inertia accounted" /></p>
+
+<p>Now, since the acceleration is still the same throughout the system</p>
 
 \[mg = (3m+3\beta)a\]
 
-<p>in order keep the algebra clean, let’s try to keep the $a$ for as long as we can.<br />
-Now, zooming in on the weight, we would see that the string on the left would pull with magnitude $2mg - 2ma$ (net force on $2m$ would be $2mg - (2mg - 2ma) = 2ma$), and the string on the right would pull with $mg + ma$. Now, again, using Newton’s third law, we can zoom in on the string and figure out it’s net force.
-<br /><br /><br /><br />
-<img src="/assets/pulley-accounted-rope.png" alt="Pulley string with string inertia accounted" />
-Finding the net force</p>
+<p>in order keep the algebra clean, let’s try to keep the $a$ for as long as we can.
+Now, zooming in on the weight, we would see that the string on the left would pull with magnitude $2mg - 2ma$ (net force on $2m$ would be $2mg - (2mg - 2ma) = 2ma$), and the string on the right would pull with $mg + ma$. Now, again, using Newton’s third law, we can zoom in on the string and figure out it’s net force.</p>
+
+<p>Finding the net force</p>
 
 \[2mg-2ma-mg-ma=mg-3ma\]
 
@@ -186,7 +196,7 @@ Finding the net force</p>
   </ol>
 </div>
 
-  </div><a class="u-url" href="/blogs/blog/2020/12/10/pulley_exposition.html" hidden></a>
+  </div><a class="u-url" href="/blog/2020/12/10/pulley_exposition.html" hidden></a>
 </article>
 
 		</section>
