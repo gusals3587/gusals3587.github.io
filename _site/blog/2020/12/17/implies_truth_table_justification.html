@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,maximum-scale=2">
+	<link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css?v=3ffcb4dd785789c8f2dbc905328a664bcb0e295e">
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3/build/web/hack.css">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+
+	<!-- The loading of KaTeX is deferred to speed up page rendering -->
+	<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+
+	<!-- To automatically render math in text elements, include the auto-render extension: -->
+	<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"></script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			renderMathInElement(
+				document.body, {
+					delimiters: [{
+							left: "$$",
+							right: "$$",
+							display: true
+						},
+						{
+							left: "\\[",
+							right: "\\]",
+							display: true
+						},
+						{
+							left: "$",
+							right: "$",
+							display: false
+						},
+						{
+							left: "\\(",
+							right: "\\)",
+							display: false
+						}
+					]
+				}
+			);
+		});
+
+	</script>
+
+	<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Utilitarian justification for the truth table of ‘implies’ operator | Henry’s blog</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Utilitarian justification for the truth table of ‘implies’ operator" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="ditched for now I need an example pair of mathematical statements p and q that’s p needs to be invalid on some “exotic” choice of axiom (eg non-euclidean geometry vs euclidean geometry) q can be right even in the choices of axiom that makes p invalid the really hard part; p and q has to be elemantary (undergraduate or lower)" />
+<meta property="og:description" content="ditched for now I need an example pair of mathematical statements p and q that’s p needs to be invalid on some “exotic” choice of axiom (eg non-euclidean geometry vs euclidean geometry) q can be right even in the choices of axiom that makes p invalid the really hard part; p and q has to be elemantary (undergraduate or lower)" />
+<link rel="canonical" href="http://localhost:4000/blog/2020/12/17/implies_truth_table_justification.html" />
+<meta property="og:url" content="http://localhost:4000/blog/2020/12/17/implies_truth_table_justification.html" />
+<meta property="og:site_name" content="Henry’s blog" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-12-17T23:07:01+09:00" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/blog/2020/12/17/implies_truth_table_justification.html","headline":"Utilitarian justification for the truth table of ‘implies’ operator","dateModified":"2020-12-17T23:07:01+09:00","datePublished":"2020-12-17T23:07:01+09:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/2020/12/17/implies_truth_table_justification.html"},"description":"ditched for now I need an example pair of mathematical statements p and q that’s p needs to be invalid on some “exotic” choice of axiom (eg non-euclidean geometry vs euclidean geometry) q can be right even in the choices of axiom that makes p invalid the really hard part; p and q has to be elemantary (undergraduate or lower)","@type":"BlogPosting","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+
+	<!-- HEADER -->
+	<div id="header_wrap" class="outer">
+		<header class="inner">
+			
+			<a id="forkme_banner" href="https://github.com/gusals3587/gusals3587.github.io">View on GitHub</a>
+			
+
+			<h1 id="project_title">Henry's blog</h1>
+			<h2 id="project_tagline"></h2>
+
+			
+			<ul class="menubar">
+				<li><a href="/">Home</a></li>
+				<li><a href="/books">Books</a></li>
+				<li><a href="/blog">Blog</a></li>
+				<li style="float: right"><a href="/archive">Archive</a></li>
+			</ul>
+		</header>
+	</div>
+
+	<!-- MAIN CONTENT -->
+	<div id="main_content_wrap" class="outer">
+		<section id="main_content" class="inner">
+			<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Utilitarian justification for the truth table of &#39;implies&#39; operator</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2020-12-17T23:07:01+09:00" itemprop="datePublished">Dec 17, 2020
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <h1 id="ditched-for-now">ditched for now</h1>
+<p>I need an example pair of mathematical statements p and q that’s</p>
+<ol>
+  <li>p needs to be invalid on some “exotic” choice of axiom (eg non-euclidean geometry vs euclidean geometry)</li>
+  <li>q can be right even in the choices of axiom that makes p invalid</li>
+  <li>the really hard part; p and q has to be elemantary (undergraduate or lower)</li>
+</ol>
+
+<p>there doesn’t seem to be that much overlap when even the notion of axiom is not really high school level anyway.</p>
+
+<hr />
+
+<p>The truth table of p $\to$ q is as follows.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">p</th>
+      <th style="text-align: center">q (presuming p)<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote">1</a></sup></th>
+      <th style="text-align: center">p $\to$ q</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">T</td>
+      <td style="text-align: center">T</td>
+      <td style="text-align: center">T</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">T</td>
+      <td style="text-align: center">F</td>
+      <td style="text-align: center">F</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">F</td>
+      <td style="text-align: center">T</td>
+      <td style="text-align: center">T</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">F</td>
+      <td style="text-align: center">F</td>
+      <td style="text-align: center">T</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Now, it’s usually the part where p is “False” that trips people up. Because, why would you even think about the implication of an assumption if that assumption is false to begin with? Well, to find the reason the truth table is defined as the way it is, let’s think about the “utility” of the word implies</p>
+
+<h4 id="what-should-implyto-do">What should imply($\to$) do?</h4>
+
+<p>implies, expressed in logic as $\to$, is used in logic generally for <a href="https://en.wikipedia.org/wiki/Modus_ponens">modus ponens</a>. That is, in an axiomatic system, if you assume p, p$\to$q then by modus ponens you should be able to deduce q.</p>
+
+<p>p<br />
+p $\to$ q</p>
+<hr />
+
+<p>q</p>
+
+<p>So, it makes sense that the part of truth table where p is true is defined the way it is, because if you thought p is true, then p $\to$ q is true, the only row left on the truth table is when q is true, so q has to be true!</p>
+
+<p>Now comes the difficult part, how should you think about the implies operator when the assumption is false?</p>
+
+<p>Well, it should atleast do one thing, it shouldn’t tell us anything about the validity of q</p>
+
+<h4 id="how-to-think-about-implication-when-assumption-is-false">How to think about implication when assumption is false</h4>
+
+<p>I’ll use two examples, since those usually help when explaining, one is “philosophical”<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote">2</a></sup> and one is mathematical.</p>
+
+<p>Example 1.<br />
+p: it rains<br />
+q: I wear boots</p>
+
+<p>they both need to be elemantary and easy to demonstrated to be associated
+p also needs to true or false depending on what axioms you have
+q needs to be a theorem which is <em>can be</em> true even if p is removed
+Example 2.<br />
+p: (euclidean distance function) the distance between two points on a two dimensional euclidean plane is $\sqrt{(x_2-x_1)^2 + (y_2 - y_1)^2}$
+q: (Pythagoras theorem) the square of the length of the hypotenuse in a right triangle is the sum of the squares of the other two lengths</p>
+
+<p>For example 1, let’s just wave our hands and say p $\to$ q is true, even though anybody can raise a counterpoint in 2 seconds<sup id="fnref:3" role="doc-noteref"><a href="#fn:3" class="footnote">3</a></sup>.<br />
+For example 2, I’ll just leave that as an exercise to the reader.</p>
+
+<p>Now, there’s one feature of p $\to$ q that we should keep in mind, it’s that the validity of p $\to$ q doesn’t mean anything about the validity of p.
+That should make sense, just because if I know if it rains, I wear boots, doesn’t mean that it’s raining right now.
+Likewise, just because I know the Pythagoras theorem, doesn’t mean that it’s always gonna be true. Maybe I’m working with some weird metric. Keep this in mind.</p>
+
+<p>Anyway, in both of these examples, p $\to$ q is true, it’s just that in my system for deduction, I may not assume neither p or q. It may even be the case that I, in my train of thoughts, decided that p is false in whatever context I was thinking in. (maybe I was solving a math problem, or pondering about what to wear outside)
+So, if p is false what should I be able to do?</p>
+
+<p>Well, even if p $\to$ q itself is true, since p is false, p $\to$ q should not tell us <strong>anything</strong> about the validity of q!
+In example 1, it means that even though it’s not raining, I still may or may not boots (I never it had to be <em>rainboots</em>, so maybe I want to wear some leather boots)
+In example 2, it may mean that $ a = 2n, a \neq 4n $ or not! The validity of q is still an open question!
+What does this mean in the truth table? Well, it means that in the part where p is false, p $\to$ q would always have to be true <em>or</em> false. If it’s always false when p is false, that means axiom p $\to$ q and ~p is ‘incompatible’<sup id="fnref:4" role="doc-noteref"><a href="#fn:4" class="footnote">4</a></sup> since there is no case in the truth table where both of them (p is false and p $\to$ q is true) can happen at the same time. If it’s always true… when then we’re done, aren’t we?</p>
+
+<p>So we narrowed down the possibility, when p is false, either p $\to$ q is always true or p $\to$ q is always false</p>
+
+<h4 id="final-nail">Final nail</h4>
+
+<p>Here comes the final part. Remember that p $\to$ q shouldn’t tell us anything about the validity of q? What would happen if p $\to$ q is false when p is false?</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">p</th>
+      <th style="text-align: center">q (presuming p)</th>
+      <th style="text-align: center">p $\to$ q</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">T</td>
+      <td style="text-align: center">T</td>
+      <td style="text-align: center">T</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">T</td>
+      <td style="text-align: center">F</td>
+      <td style="text-align: center">F</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">F</td>
+      <td style="text-align: center">T</td>
+      <td style="text-align: center">F</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">F</td>
+      <td style="text-align: center">F</td>
+      <td style="text-align: center">F</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>When you presume p $\to$ q, you can find out that p is true!
+This is the final nail in the coffin. Because p $\to$ q has to</p>
+<ol>
+  <li>not tell us anything about the validity of q when p is false</li>
+  <li>not tell us anything about the validity of p by itself</li>
+  <li>(implicit) <em>do</em> tell us about the validity of q if p is true</li>
+</ol>
+
+<p>The only possible truth table was the one introduced at the beginning above.</p>
+
+<h4 id="reductio-ad-absurdum">Reductio ad absurdum</h4>
+
+<p>One consequence of accepting the truth table is that reductio ad absurdum can also be justified.</p>
+
+\[(~p\to p) \to p\]
+
+<p>With <a href="https://en.wikipedia.org/wiki/Law_of_excluded_middle">the law of excluded middle</a>, the only way $~p\to p$ is true is if ~p is false and p is true. So $~p \to p$ can be <em>shown</em> to be true, <strong>without</strong> presuming about the truth value of p or ~p. Then p has to be true<a href="Some may think that you can prove ~p by proving $~p \to p$ is false, unfortunately, because of [principle of explosion](https://en.wikipedia.org/wiki/Principle_of_explosion) basing any statement from a **false** statement is meaningless. Since you can prove any statement by that method anyway.">asterisk 6</a></p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">p</th>
+      <th style="text-align: center">q (presuming p)<sup id="fnref:1:1" role="doc-noteref"><a href="#fn:1" class="footnote">1</a></sup></th>
+      <th style="text-align: center">p $\to$ q</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><del>T</del></td>
+      <td style="text-align: center"><del>T</del></td>
+      <td style="text-align: center"><del>T</del></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">T</td>
+      <td style="text-align: center">F</td>
+      <td style="text-align: center">F</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">F</td>
+      <td style="text-align: center">T</td>
+      <td style="text-align: center">T</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><del>F</del></td>
+      <td style="text-align: center"><del>F</del></td>
+      <td style="text-align: center"><del>T</del></td>
+    </tr>
+  </tbody>
+</table>
+
+<h5 id="more-resources">More resources</h5>
+
+<p>for more interested, you can check out <a href="https://sites.millersville.edu/bikenaga/math-proof/math-proof-notes.html">Now retired Prof. Ikenaga course notes on math proof that was about truth tables</a></p>
+
+<hr />
+
+<p>I was tempted to use a more ‘famous’ one, like the Riemann hypothesis and it’s many implications or the Taniyama–Shimura conjecture and the Fermat’s last theorem, but I decided a pair of theorem that’s a bit more elemantary, less flashy, and still easy to recognize the relationship of would make a better example for demonstration.</p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>One thing that I always see is that you implicitly assume p when you want to find the truth value of q in that truth table, not making that explicit implies operator look like it’s the same thing as AND or OR. And although it’s technically a binary operator just like those two, it’s different in that it has to make an assumption about the relationship between p and q when determining their truth values, whereas AND and OR doesn’t really require them. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a> <a href="#fnref:1:1" class="reversefootnote" role="doc-backlink">&#8617;<sup>2</sup></a></p>
+    </li>
+    <li id="fn:2" role="doc-endnote">
+      <p>the reason I call it “philosophical” is these are usually the kind of example you would see in philosophy, the problem I always have with these is that they require so many “messy” human context and implicit assumptions. In other words, these examples would not be suitable to a turing machine. And sure, these symbols and rules were initially created for humans, not machines, but human culture always felt so malleable and open for misinterpretation, that I think it’s always healthy to include a mathematical example that feels a lot more concrete and well-defined. <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:3" role="doc-endnote">
+      <p>Especially since I don’t actually own a pair of boots <a href="#fnref:3" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:4" role="doc-endnote">
+      <p>If you immediately became uncomfortable, keep reading, I’ll deal with it later <a href="#fnref:4" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+  </div><a class="u-url" href="/blog/2020/12/17/implies_truth_table_justification.html" hidden></a>
+</article>
+
+		</section>
+	</div>
+
+	<!-- FOOTER  -->
+	<div id="footer_wrap" class="outer">
+		<footer class="inner">
+			
+			<p class="copyright">Henry's blog maintained by <a href="https://github.com/gusals3587">gusals3587</a></p>
+			
+			<p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+		</footer>
+	</div>
+
+	
+</body>
+
+</html>

@@ -274,7 +274,7 @@ ul.menubar { list-style: none; overflow: auto; padding-left: 5px; }
 
 body { font-family: Hack, monospace; }
 
-.inner { max-width: 75%; line-height: 1.6; }
+.inner { max-width: 75%; line-height: 1.6; padding: 0; }
 
 .iframe-container { overflow: hidden; padding-top: 56.25%; position: relative; }
 

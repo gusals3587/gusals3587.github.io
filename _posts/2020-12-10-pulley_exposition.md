@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Pulleys with weight of the rope accounted"
+tags: physics classical_mechanic
 category: blog
 ---
 
@@ -23,13 +24,15 @@ category: blog
 	}
 </style>
 
+tags - \|{% for tag in page.tags %} {{ tag }} \| {% endfor %}
+
 ![Pulley with weight 2m on the left and weight m on the right](/assets/pulley-thought1.png)
 
 In a typical highschool situation, when solving a diagram like this, we would be neglecting the friction and the weight of the rope. Now, accounting for friction is a story for another time. But let's look at the rope more closely, what does it mean to "neglect the weight of the rope"?
 
 Well, it means we pretend the rope has zero mass, and even though it's accelerating just like the weight on the pulley, it will take 0 Newton to keep up with the weight $ 2m $ and $ m $.
 
-Don't believe me? Well, let's calculate the force on the rope.\
+Don't believe me? Well, let's calculate the force on the rope.  
 Because the magnitude of acceleration is the same all throughout the system. The net force on the whole system is $ 2mg - mg = mg = 3ma $ which leads to $ a = \frac{1}{3}g$.
 
 ![Diagram showing the net force on the pulley](/assets/pulley-net-force.png)
