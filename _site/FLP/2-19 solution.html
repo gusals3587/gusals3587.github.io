@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,maximum-scale=2">
+	<link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css?v=c854c7020e35d3483f480876f238637a676e0918">
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3/build/web/hack.css">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+
+	<!-- The loading of KaTeX is deferred to speed up page rendering -->
+	<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+
+	<!-- To automatically render math in text elements, include the auto-render extension: -->
+	<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"></script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			renderMathInElement(
+				document.body, {
+					delimiters: [{
+							left: "$$",
+							right: "$$",
+							display: true
+						},
+						{
+							left: "\\[",
+							right: "\\]",
+							display: true
+						},
+						{
+							left: "$",
+							right: "$",
+							display: false
+						},
+						{
+							left: "\\(",
+							right: "\\)",
+							display: false
+						}
+					]
+				}
+			);
+		});
+
+	</script>
+
+	<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Henry’s blog</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Henry’s blog" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/FLP/2-19%20solution" />
+<meta property="og:url" content="http://localhost:4000/FLP/2-19%20solution" />
+<meta property="og:site_name" content="Henry’s blog" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/FLP/2-19%20solution","@type":"WebPage","headline":"Henry’s blog","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+
+	<!-- HEADER -->
+	<div id="header_wrap" class="outer">
+		<header class="inner">
+			
+			<a id="forkme_banner" href="https://github.com/gusals3587/gusals3587.github.io">View on GitHub</a>
+			
+
+			<h1 id="project_title">Henry's blog</h1>
+			<h2 id="project_tagline"></h2>
+
+			
+			<ul class="menubar">
+				<li><a href="/">Home</a></li>
+				<li><a href="/books">Books</a></li>
+				<li><a href="/blog">Blog</a></li>
+				<li style="float: right"><a href="/archive">Archive</a></li>
+			</ul>
+		</header>
+	</div>
+
+	<!-- MAIN CONTENT -->
+	<div id="main_content_wrap" class="outer">
+		<section id="main_content" class="inner">
+			<p><img src="/assets/FLP_assets/2.19 problem.png" alt="problem 2.19" />
+<img src="/assets/FLP_assets/fig 2-17.png" alt="fig 2-17" /></p>
+
+<p>Since I’ll be using principle of virtual work with the <a href="/blog/2021/01/06/impossible_triangle.html">impossible triangle trick</a>, I need to know how the diagram would move under small perturbation.</p>
+
+<p>Now, the first thing to notice is that that the angle between the two ends of the rod would remain the same, $120^\circ$, since the rod will be sitting on top of the circle.</p>
+
+<video width="400" controls="" loop="" autoplay="">
+  <source src="/assets/FLP_assets/FLP fig 2-17.mp4" type="video/mp4" />
+</video>
+
+<p>Next, notice that the two ends of the rod would move the same distance along the circle, since if you move one end of the rod by $R\,d\theta$, the other end of the rod would move $R\,d\theta$</p>
+
+<video width="400" controls="" loop="" autoplay="">
+  <source src="/assets/FLP_assets/FLP fig 2-17 same distance demonstration.mp4" type="video/mp4" />
+</video>
+
+<p>For the principle of virtual work to work, we need two information.</p>
+<ol>
+  <li>How the center of mass(COM) of the rod changes</li>
+  <li>How the weight $W/2$ moves</li>
+</ol>
+
+<p>Fortunately, we can use the two end points to get both of them, and since the two end points always move the same distance, that should make our job considerably easier.</p>
+
+<p>If we call our position vector of the left end of the rod $\vec{a}$ and call the right end of the rod $\vec{b}$, the COM of the rod would be $\frac{\vec{a} + \vec{b}}{2}$</p>
+
+<p>For the weight $W/2$, the position vector is just $\vec{b}$</p>
+
+<p>Now, if we want to find the change of the position vector, for the COM it’s $\frac{\Delta\vec{a} + \Delta\vec{b}}{2}$, and for the $W/2$, it’s $\Delta\vec{b}$</p>
+
+<p>Here is where the impossible triangle comes into play, we imagine the rod moving a very small distance, in fact an infinitesimally small distance, along the circle, bit like the circle above, but infinitely smaller.</p>
+
+<p>Now, due to the property of this triangle, we also imagine it as a tangent to the whole outer circle. Then parameterize it with the angle the circle makes with the vertical axis.</p>
+
+<p><img src="/assets/FLP_assets/2.19 parametrization.png" alt="parametrization" width="895" /></p>
+
+<p>We’ll worry about how to get $\theta$ from $\alpha$ later, but you can figure it out yourself if you want to. (it’s not that hard)</p>
+
+<p>Then parametrize the right end of the rod with respect to $\alpha$, and you’ll find that the angle of the small triangle will be $120^\circ - \alpha$ (I won’t draw the figure here, just keep in mind the angle between the two ends is $120^\circ$, and you can figure out the rest)</p>
+
+<p>Finally, we need to choose a direction aka choose a sign. For convention, we’ll choose down as minus, and up as positive.</p>
+
+<p>We’ve finished all the setup we need. Since the distance required for the virtual work calculation is the vertical distance, we take the height changed by the small distances at the two ends, multiply by the appropriate weights, add it all up, set it zero, and start the usual algebra.</p>
+
+<p>Height changed on the left end: $-ds\sin (\alpha)$</p>
+
+<p>Height changed on the right end: $ds\sin (120^\circ - \alpha)$</p>
+
+<p>Virtual work on the COM of the rod: $W\frac{1}{2}(ds\sin (120^\circ - \alpha) - ds\sin (\alpha))$</p>
+
+<p>Virtual work on the $W/2$ weight: $\frac{W}{2}ds\sin (120^\circ - \alpha)$</p>
+
+<p>Total work</p>
+
+\[\frac{W}{2}ds(\sin (120^\circ - \alpha) - \sin (\alpha) + \sin(120^\circ - \alpha)) = 0 \\
+2\sin (120^\circ - \alpha) = \sin (\alpha)\]
+
+<p>We need to solve this equation. You can either use the sin addition formula or be lazy like me and ask wolfram alpha.</p>
+
+<p>For the final step, how to find $\theta$ from $\alpha$</p>
+
+<p><img src="/assets/FLP_assets/2.19 alpha to theta.png" alt="alpha minus 60 degrees" width="830" /></p>
+
+<p>I’m sure you can fill in the rest</p>
+
+		</section>
+	</div>
+
+	<!-- FOOTER  -->
+	<div id="footer_wrap" class="outer">
+		<footer class="inner">
+			
+			<p class="copyright">Henry's blog maintained by <a href="https://github.com/gusals3587">gusals3587</a></p>
+			
+			<p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+		</footer>
+	</div>
+
+	
+</body>
+
+</html>

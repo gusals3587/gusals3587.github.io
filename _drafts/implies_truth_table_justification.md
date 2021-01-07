@@ -2,6 +2,7 @@
 layout: post
 title: "Utilitarian justification for the truth table of 'implies' operator"
 category: blog
+tags: math logic
 ---
 
 # ditched for now
