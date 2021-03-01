@@ -15,9 +15,13 @@ Starts off with big bang, quickly clarify that it will talk about human, explain
 
 Tells you what evolution did to Homo sapiens, big brain and walking upright with two dexterous hand. Baby were born earlier, making them needy, but allowing them to molded and shaped in all kinds of different ways. Tells us that we'll talk about ecological effect of our rapid ascent into the top of the food chain
 
+> For more than 2 million years, human neural networks kept growing and growing, but apart from some flint knives and pointed sticks, human had little precious little to show for it. What then drove forward the evolution of the massive human brain during those 2 million years? Frankly, we don't know.
+
 ### A Race of Cooks
 
 Tells us about fire, and it's most significant effect, cooking
+
+Large brains, use of tools, superior learning abilities and complex social structures, we enjoyed these for 2 million years yet we didn't do anything *really* big with them.
 
 ### Our Brother's Keepers
 

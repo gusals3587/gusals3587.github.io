@@ -26,7 +26,7 @@ Even with gossip, the maximum number of people a group can have while maintainin
 
 Nation, Money, Laws, Human Right, God can all be described as fiction, due to their abstract and unphysical identity. Such, our modern society is based on the similar basis as ghosts and spirits of archaic Sapiens
 
-Peugeot a "legal fiction" more specifically, "limited liability company" an identity that exist in the collective mind of people as long as it's, based also on another collective fiction, legal to do so.
+Peugeot; a "legal fiction", more specifically, "limited liability company", an identity that exist in the collective mind of people as long as it's, based also on another collective fiction, legal to do so.
 
 Convincing everyone to believe in a collective fiction is not easy, yet when they do, it gives Sapiens immense power.
 
@@ -36,7 +36,7 @@ As long as everybody agrees, these imagined realities exert force on the world, 
 
 ### Bypassing the Genome
 
-Things that go against the fundamental principle of natural selection: Catholic priest, Buddhist Monk, and ancient Chinese eunuch bureaucracies.
+Things that go against the fundamental principle of natural selection: Catholic priest, Buddhist Monk, and ancient Chinese eunuch bureaucracies, yet they exist due to the power of collective belief.
 
 Also something that could not exist without collective fiction: trade. It's very hard to trust strangers hundreds of kilometers away without some basis of social constructs.
 
@@ -50,8 +50,10 @@ trait 3 -> cooperation of thousands to millions of people
 
 ### History and Biology
 
-Using only biological constraints, hormones, genes, organism to describe collective human behavior is like offering a detailed description of a football stadium for a commentary on world cup.
+Using only biological constraints; hormones, genes, and organism to describe collective human behavior is like offering a detailed description of a football stadium for a commentary on world cup.
 
-next chapter TODO
+[next chapter](/sapiens/3)
+
+[previous chapter](/sapiens/1)
 
 [index](/sapiens)
